@@ -55,10 +55,10 @@ public class BinarySearch {
         }
 
         int left = 0;
-        int right = numbs.length; // 定义target在左闭右闭区间里
+        int right = numbs.length; // 定义target在左闭右开区间里
         int middle;
         // 边界条件
-        while(left <= right) {
+        while(left < right) {
              middle = (left + right) / 2;
              if(numbs[middle] == target) {
                  return middle; // 查找成功返回index
