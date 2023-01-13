@@ -1,7 +1,7 @@
 package com.djn.algorithm.array.binarysearch;
 
 /**
- * !二分查找
+ * !leetcode题目704.二分查找
  * !二分搜索的前提是有序数组(题目中提到有序数组都可以考虑),关键在于区间定义要想清楚
  * !坚持循环不变量的原则
  * 给定一个n个元素有序的（升序）整型数组nums 和一个目标值target，
@@ -28,7 +28,9 @@ public class BinarySearch {
         int middle;
 
         while(left <= right) {
-             middle = (left + right) / 2;
+             // middle = (left + right) / 2;
+             // 等同于上式，但是能防止left + right超过int类型最大值，也就是能防止数据溢出
+             middle = left + (right - left) / 2;
              if(numbs[middle] == target) {
                  return middle; // 查找成功返回index
              }else if(numbs[middle] < target) {

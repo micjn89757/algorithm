@@ -7,7 +7,7 @@ package com.djn.algorithm.array.binarysearch;
  * 如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
  * 假设数组中无重复元素
  *
- * !主要考虑四种情况：
+ * !主要考虑四种情况
  * 目标值在数组所有元素之前
  * 目标值等于数组中某一个元素
  * 目标值插入数组中的位置
@@ -34,7 +34,7 @@ public class SearchInsertPosition {
         int middle = 0;
 
         while(left <= right) {
-            middle = (left + right) / 2;
+            middle = left + (right - left) / 2;
             if(arr[middle] == target) {
                 return middle;
             }else if(arr[middle] > target) {
