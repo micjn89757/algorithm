@@ -1,4 +1,4 @@
-package com.djn.algorithm.array_;
+package com.djn.algorithm.array.binarysearch;
 
 /**
  * !二分查找

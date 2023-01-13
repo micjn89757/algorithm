@@ -1,4 +1,4 @@
-package com.djn.algorithm.array_;
+package com.djn.algorithm.array.binarysearch;
 
 import org.junit.Test;
 import static org.junit.Assert.*;

@@ -1,6 +1,6 @@
-package com.djn.algorithm.array_;
+package com.djn.algorithm.array.binarysearch;
 
-import com.djn.algorithm.array_.BinarySearch;
+import com.djn.algorithm.array.binarysearch.BinarySearch;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 

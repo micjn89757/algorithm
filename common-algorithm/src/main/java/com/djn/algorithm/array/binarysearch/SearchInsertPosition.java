@@ -1,4 +1,4 @@
-package com.djn.algorithm.array_;
+package com.djn.algorithm.array.binarysearch;
 
 /**
  * !leetcode题目35.搜索插入位置
