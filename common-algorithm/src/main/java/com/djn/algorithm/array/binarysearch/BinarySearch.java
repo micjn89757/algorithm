@@ -63,7 +63,7 @@ public class BinarySearch {
         int middle;
         // 边界条件
         while(left < right) {
-             middle = (left + right) / 2;
+             middle = left + (right - left) / 2;
              if(numbs[middle] == target) {
                  return middle; // 查找成功返回index
              }else if(numbs[middle] < target) {

@@ -32,7 +32,7 @@ public class FindFirstLastPosition {
             return new int[]{-1, -1};
         }
 
-        // 情况三
+        // 情况三等正常情况
         if ((rightBorder - leftBorder) > 1) {
             return new int[]{leftBorder + 1, rightBorder - 1};
         }
