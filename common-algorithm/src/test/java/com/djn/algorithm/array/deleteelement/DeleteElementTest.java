@@ -1,7 +1,6 @@
-package com.djn.algorithm.array.binarysearch;
+package com.djn.algorithm.array.deleteelement;
 
 import org.junit.Test;
-import org.junit.experimental.theories.suppliers.TestedOn;
 
 import java.util.Arrays;
 
