@@ -23,8 +23,7 @@ public class MoveZero {
      * 时间复杂度O(n)
      * 空间复杂度O(1)
      *
-     *
-     * @param nums
+     * @param nums 需要进行移动的数组
      */
     public static void tpMoveZero(int[] nums) {
         int size = nums.length;
