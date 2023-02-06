@@ -1,9 +1,10 @@
 package com.djn.algorithm.array.binarysearch;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 
 /**
  * 测试左右边界方法时候注意特殊情况取值

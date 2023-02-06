@@ -1,7 +1,8 @@
 package com.djn.algorithm.array.binarysearch;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 
 public class SearchInsertPositionTest {
@@ -14,7 +15,7 @@ public class SearchInsertPositionTest {
 
         for(int i = 0; i < target.length; i++) {
             res = SearchInsertPosition.binaryClosedSearchPos(arr, target[i]);
-            assertEquals("return index is false",res, rightRes[i]);
+            assertEquals(res, rightRes[i], "return index is false");
         }
     }
 
@@ -27,7 +28,7 @@ public class SearchInsertPositionTest {
 
         for(int i = 0; i < target.length; i++) {
             res = SearchInsertPosition.binaryOpenSearchPos(arr, target[i]);
-            assertEquals("result is false", res, rightRes[i]);
+            assertEquals(res, rightRes[i], "result is false");
         }
     }
 
@@ -40,7 +41,7 @@ public class SearchInsertPositionTest {
 
         for(int i = 0; i < target.length; i++) {
             res = SearchInsertPosition.searchPos(arr, target[i]);
-            assertEquals("result is false", res, rightRes[i]);
+            assertEquals(res, rightRes[i], "result is false");
         }
     }
 }

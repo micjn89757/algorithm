@@ -1,7 +1,7 @@
 package com.djn.algorithm.array.sortedsquare;
 
-import org.junit.Test;
-import static org.junit.Assert.assertArrayEquals;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class SolutionTest {
 
@@ -10,7 +10,7 @@ public class SolutionTest {
         int[] nums = {-4, -1, 0, 3, 10};
         int[] target = {0, 1, 9, 16, 100};
 
-        assertArrayEquals("结果不正确",Solution.originSortedSquares(nums), target);
+        assertArrayEquals(Solution.originSortedSquares(nums), target, "结果不正确");
     }
 
     @Test
@@ -18,6 +18,6 @@ public class SolutionTest {
         int[] nums = {-4, -1, 0, 3, 10};
         int[] target = {0, 1, 9, 16, 100};
 
-        assertArrayEquals("结果不正确",Solution.tpSortedSquares(nums), target);
+        assertArrayEquals(Solution.tpSortedSquares(nums), target, "结果不正确");
     }
 }
